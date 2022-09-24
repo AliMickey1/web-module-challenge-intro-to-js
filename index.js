@@ -292,11 +292,11 @@ Using the annoyingSong function below do the following:
   
   for(let i = numbr; i > 0; i--)
   {
-   return `${numbr} bottles of soda on the wall, ${numbr} bottles of soda, take one down pass it around ${numbr--} bottles of soda on the wall`;
+   return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`;
   }
   }
 
-  annoyingSong(5);
+  console.log(annoyingSong(5));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -314,28 +314,28 @@ Using the grade function below do the following:
 */
 
 function grade(score){
-  if(score >= 90 && score <= 100)
+  if(score >= 90  && score <= 100)
     {
-      console.log('you got an A');
+      return 'you got an A';
     }
-  else if(score < 90 && score >= 80)
+  else if(score >= 80 && score <= 90)
     {
-      console.log('you got a B');
+      return 'you got a B';
     }
-   else if(score < 80 && score >= 70)
+   else if(score >= 70 && score <= 78)
      {
-       console.log('you got a C');
+      return 'you got a C';
   }
-    else if(score < 70 && score >= 60)
+    else if(score >= 60 && score <= 70)
       {
-        console.log('you got a D');
+        return 'you got a D';
       }
     else
       {
-        console.log('you got an F');
+        return 'you got an F';
       }
   }
-  grade(95);
+  console.log(grade(95));
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
