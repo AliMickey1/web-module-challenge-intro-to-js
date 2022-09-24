@@ -22,9 +22,9 @@ Do the following:
 const votingAge = 18;
 
 if(votingAge >= 18){
-  console.log('true');
+  console.log(true);
 } else {
-  console.log('false');
+  console.log(false);
 }
 
 
@@ -39,7 +39,6 @@ Do the following:
 
    HINT: no function required
 */
-
 let firstThing = 8;
 const secondThing = 10;
 
@@ -213,32 +212,32 @@ function game(user, computer) {
   if (user === 'rock') {
     
     if (computer === 'paper') {
-      return 'you lose!';
+      return "you lose!";
     } else if (computer === 'scissors'){
-      return 'you win!';
+      return "you win!";
     } else if (computer === 'rock'){
       return "it's a tie";
     }
   } else if (user === 'paper') {
     if (computer === 'rock') {
-      return 'you win!';
+      return "you win!";
     } else if (computer === 'scissors') {
-      return 'you lose!';
+      return "you lose!";
     } else if (computer === 'paper'){
       return "it's a tie";
     }
   } else if (user === 'scissors') {
     if (computer === 'paper') {
-      return 'you win!';
+      return "you win!";
     } else if (computer === 'rock') {
-      return 'you lose!';
+      return "you lose!";
     } else if(computer === 'scissors') {
       return "it's a tie";
     }
   }
 }
 
-console.log(game('paper', computer));
+console.log(game());
 
 
 
@@ -256,7 +255,7 @@ Using the miles function below do the following:
 function miles(kM){
 return kM * 0.621371;
 }
-console.log(miles(2));
+console.log(miles());
 
 
 //Task 5b - Centimeters to Feet
@@ -270,7 +269,7 @@ Using the feet function below do the following:
 function feet(centy){
   return centy / 30.48;
  }
- console.log(feet(100));
+ console.log(feet());
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -289,18 +288,30 @@ Using the annoyingSong function below do the following:
 
 
   function annoyingSong(numbr){
-    console.log(`${numbr} bottles of soda on the wall, ${numbr} bottles of soda, take one down pass it around ${numbr - 1} bottles of soda on the wall`);
-  }
+   
   
-  let numbr = 5;
-  
-  while(numbr >= 1)
+  for(let i = numbr; i > 0; i--)
   {
-  console.log(annoyingSong(numbr));
-    numbr--;
+   return `${numbr} bottles of soda on the wall, ${numbr} bottles of soda, take one down pass it around ${numbr--} bottles of soda on the wall`;
+  }
   }
 
+  annoyingSong(5);
+
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
+
+//Grade Calculator
+/*
+Using the grade function below do the following: 
+1. Receive a score out of 100 
+2. Return the corresponding letter grade following this grade scale:
+
+ 90-100 should return 'you got an A' 
+ 80-89 should return 'you got a B'
+ 70-79 should return 'you got a C'
+ 60-69 should return 'you got a D'
+ below should return 'you got an F'
+*/
 
 function grade(score){
   if(score >= 90 && score <= 100)
@@ -324,7 +335,7 @@ function grade(score){
         console.log('you got an F');
       }
   }
-  grade(90);
+  grade(95);
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
