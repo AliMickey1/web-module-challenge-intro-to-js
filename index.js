@@ -39,8 +39,9 @@ Do the following:
 
    HINT: no function required
 */
-let firstThing = value1;
-const secondThing = value2;
+
+let firstThing = 8;
+const secondThing = 10;
 
 if(firstThing === secondThing) {
 firstThing++;
