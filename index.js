@@ -216,7 +216,7 @@ function game(user, computer) {
     } else if (computer === 'scissors'){
       return 'you win!';
     } else if (computer === 'rock'){
-      return 'its a tie';
+      return "it's a tie";
     }
   } else if (user === 'paper') {
     if (computer === 'rock') {
@@ -224,15 +224,15 @@ function game(user, computer) {
     } else if (computer === 'scissors') {
       return 'you lose!';
     } else if (computer === 'paper'){
-      return 'its a tie';
+      return "it's a tie";
     }
   } else if (user === 'scissors') {
     if (computer === 'paper') {
-      return 'you win';
+      return 'you win!';
     } else if (computer === 'rock') {
-      return 'you lose';
+      return 'you lose!';
     } else if(computer === 'scissors') {
-      return 'its a tie';
+      return "it's a tie";
     }
   }
 }
@@ -291,9 +291,9 @@ Using the annoyingSong function below do the following:
     console.log(`${numbr} bottles of soda on the wall, ${numbr} bottles of soda, take one down pass it around ${numbr - 1} bottles of soda on the wall`);
   }
   
-  let numbr = 10;
+  let numbr = 5;
   
-  while(numbr > 1)
+  while(numbr >= 1)
   {
   console.log(annoyingSong(numbr));
     numbr--;
